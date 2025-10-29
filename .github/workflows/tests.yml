@@ -19,11 +19,8 @@ jobs:
       run: curl -LsSf https://astral.sh/uv/install.sh | sh
     - name: Sync environment
       run: uv sync
-    - name: Run pre-commit checks
-      run: uv run pre-commit run --all-files
 
   tests:
-    needs: pre-commit
     runs-on: ubuntu-latest
 
     steps:

@@ -1,4 +1,5 @@
 import unittest
+
 from cancer_prediction_rkd43_99.cancer_model import CancerModel
 
 
@@ -19,4 +20,3 @@ class TestCancerModel(unittest.TestCase):
         target = 0
         diagnosis = model.target_to_diagnosis(target)
         self.assertEqual("Malignant", diagnosis)
-  

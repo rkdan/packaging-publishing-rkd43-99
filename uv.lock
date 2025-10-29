@@ -56,7 +56,7 @@ wheels = [
 [[package]]
 name = "cancer-prediction-rkd43-99"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "ipykernel" },
     { name = "matplotlib" },

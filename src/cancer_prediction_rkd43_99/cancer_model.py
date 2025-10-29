@@ -26,6 +26,17 @@ class CancerModel:
     def __str__(self) -> str:
         return 'CancerModel'
 
+    def new_function(self, arg1 : int, arg2 : int) -> int:
+        """Multiply two functions
+
+        Args:
+            arg1 (int): int 1
+            arg2 (int): int 2
+
+        Returns:
+            int: result
+        """
+        return arg1 * arg2
 
     def fit(self, X : np.ndarray | pd.DataFrame, y : np.ndarray | pd.DataFrame) -> None:
         """Fit the model to the given data.
@@ -170,3 +181,4 @@ class CancerModel:
     def get_feature_importance_df_sorted_by_variance_and_variance(self, X):
         feature_importance_df = self.get_feature_importance_df(X)
         return feature_importance_df['variance'].sort_values(ascending=False)
+

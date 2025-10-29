@@ -1,0 +1,12 @@
+site_name: Cancer Prediction
+site_url: https://github.com/rkdan/cancer-prediction-rkd43-99
+repo_url: https://github.com/rkdan/cancer-prediction-rkd43-99
+nav:
+  - Home: index.md
+  - cancer-prediction:
+    - cancer model: src/cancer_prediction_rkd43_99/cancer_model.md
+theme: readthedocs
+plugins:
+  - mkdocstrings
+watch:
+  - .  # reload docs for file changes
